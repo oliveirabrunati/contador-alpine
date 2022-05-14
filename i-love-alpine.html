@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <section class="container">
+
+            <h1 x-data="{mensagem: 'I ❤️ Alpine'}" x-text="mensagem"></h1>
+            <p x-data="{mensagem: 'Este é um contador usando o Framework Alpine:'}" x-text="mensagem"></p>
+    
+            <div x-data="{ contador: 0}">
+                <button x-on:click="contador++"> + </button>
+                <span x-text="contador"></span>
+                <button x-on:click="contador--"> - </button>
+            </div>
+
+        </section>
+    </body>
+</html>
